@@ -108,6 +108,10 @@
                                 <label for="persona-challenges" class="font-bold">주요 어려움 (Pain Points)</label>
                                 <textarea id="persona-challenges" class="w-full p-2 mt-1 border border-gray-300 rounded-md" rows="2" placeholder="예: 사료비 부담 증가, 질병 관리의 어려움, 최신 정보 부족, 인력난"></textarea>
                             </div>
+                            <div>
+                                <label for="persona-personality" class="font-bold">성격 및 가치관 (Personality)</label>
+                                <input type="text" id="persona-personality" class="w-full p-2 mt-1 border border-gray-300 rounded-md" placeholder="예: 신중하고 분석적, 커뮤니티 내 신뢰 중시, 새로운 기술에 개방적">
+                            </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                  <div>
                                     <label for="purchase-factors" class="font-bold">사료 선택 시 중요 요인</label>
@@ -340,11 +344,12 @@
                 const mainLivestock = document.getElementById('main-livestock').value;
                 const personaGoals = document.getElementById('persona-goals').value;
                 const personaChallenges = document.getElementById('persona-challenges').value;
+                const personaPersonality = document.getElementById('persona-personality').value;
                 const purchaseFactors = document.getElementById('purchase-factors').value;
                 const infoSources = document.getElementById('info-sources').value;
 
                 if (!personaName || !personaAge || !personaLocation || !mainLivestock || !personaGoals || !personaChallenges) {
-                    alert('모든 항목을 채워주세요.'); // 실제 앱에서는 모달로 대체하는 것이 좋습니다.
+                    alert('성격 및 가치관을 제외한 모든 항목을 채워주세요.'); // 실제 앱에서는 모달로 대체하는 것이 좋습니다.
                     return;
                 }
 
@@ -357,6 +362,7 @@
 - **주력 축종 및 규모**: ${mainLivestock}
 - **사업 목표**: ${personaGoals}
 - **주요 어려움**: ${personaChallenges}
+- **성격 및 가치관**: ${personaPersonality}
 - **사료 선택 시 중요 요인**: ${purchaseFactors}
 - **주요 정보 채널**: ${infoSources}
 
