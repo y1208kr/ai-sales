@@ -62,7 +62,7 @@
 
     <header class="bg-[#073B4C] text-white text-center py-8 px-4">
         <h1 class="text-4xl md:text-5xl font-black mb-2">AI 기반 영업 전문가 성장 프로그램</h1>
-        <p class="text-lg md:text-xl text-[#FFD166]">AI와 함께 실전 역량을 강화하는 3단계 핵심 모듈</p>
+        <p class="text-lg md:text-xl text-[#FFD166]">AI와 함께 실전 역량을 강화하는 핵심 모듈</p>
     </header>
 
     <main class="container mx-auto p-4 md:p-8 max-w-5xl">
@@ -72,8 +72,62 @@
 
             <div class="slide">
                 <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-bold text-[#118AB2]">M1: 고객 유형별 맞춤 접근법 (SPIN 셀링)</h2>
-                    <span class="font-bold text-gray-400">Page 1 / 3</span>
+                    <h2 class="text-2xl font-bold text-[#118AB2]">M1: AI 기반 팜스코 사료영업 고객 페르소나 만들기</h2>
+                     <span class="font-bold text-gray-400">Page 1 / 4</span>
+                </div>
+                <div class="flex-grow flex flex-col justify-center">
+                    <h3 class="text-xl font-bold mb-4 text-center">🎯 이상적인 고객 페르소나 정의하기</h3>
+                    <p class="text-sm text-gray-600 mb-6 text-center">아래 항목들을 구체적으로 기입하여 팜스코 사료 영업을 위한 핵심 고객 페르소나를 만들고, AI를 통해 맞춤 전략을 얻어보세요.</p>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 max-w-3xl mx-auto w-full">
+                        <div class="space-y-4 text-sm">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                 <div>
+                                    <label for="persona-name" class="font-bold">페르소나 이름</label>
+                                    <input type="text" id="persona-name" class="w-full p-2 mt-1 border border-gray-300 rounded-md" placeholder="예: 스마트한 축산인 김사장">
+                                </div>
+                                 <div>
+                                    <label for="persona-age" class="font-bold">나이</label>
+                                    <input type="number" id="persona-age" class="w-full p-2 mt-1 border border-gray-300 rounded-md" placeholder="예: 45">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                   <label for="persona-location" class="font-bold">주요 활동 지역</label>
+                                   <input type="text" id="persona-location" class="w-full p-2 mt-1 border border-gray-300 rounded-md" placeholder="예: 경기도 이천">
+                               </div>
+                                <div>
+                                   <label for="main-livestock" class="font-bold">주력 축종 및 규모</label>
+                                   <input type="text" id="main-livestock" class="w-full p-2 mt-1 border border-gray-300 rounded-md" placeholder="예: 한우, 150두">
+                               </div>
+                           </div>
+                            <div>
+                                <label for="persona-goals" class="font-bold">사업 목표 (Goals)</label>
+                                <textarea id="persona-goals" class="w-full p-2 mt-1 border border-gray-300 rounded-md" rows="2" placeholder="예: 생산성 10% 향상, HACCP 인증 획득, 가공 및 직거래 판로 개척"></textarea>
+                            </div>
+                            <div>
+                                <label for="persona-challenges" class="font-bold">주요 어려움 (Pain Points)</label>
+                                <textarea id="persona-challenges" class="w-full p-2 mt-1 border border-gray-300 rounded-md" rows="2" placeholder="예: 사료비 부담 증가, 질병 관리의 어려움, 최신 정보 부족, 인력난"></textarea>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                 <div>
+                                    <label for="purchase-factors" class="font-bold">사료 선택 시 중요 요인</label>
+                                    <input type="text" id="purchase-factors" class="w-full p-2 mt-1 border border-gray-300 rounded-md" placeholder="예: 성분 및 품질, 가격 대비 성능(가성비), 전문가 추천">
+                                </div>
+                                 <div>
+                                    <label for="info-sources" class="font-bold">주요 정보 채널</label>
+                                    <input type="text" id="info-sources" class="w-full p-2 mt-1 border border-gray-300 rounded-md" placeholder="예: 축산 전문지, 지역 축협 모임, 온라인 커뮤니티">
+                                </div>
+                            </div>
+                             <button id="persona-generator-btn" class="gemini-button w-full mt-4">✨ AI 페르소나 분석 및 전략 제안</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold text-[#06D6A0]">M2: 고객 유형별 맞춤 접근법 (SPIN 셀링)</h2>
+                    <span class="font-bold text-gray-400">Page 2 / 4</span>
                 </div>
                  <div class="flex-grow flex flex-col justify-center">
                     <h3 class="text-xl font-bold mb-4 text-center">AI를 활용한 고객 관점의 SPIN 스크립트 생성</h3>
@@ -103,8 +157,8 @@
 
             <div class="slide">
                 <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-bold text-[#06D6A0]">M2: 거절을 기회로 바꾸는 대처법</h2>
-                    <span class="font-bold text-gray-400">Page 2 / 3</span>
+                    <h2 class="text-2xl font-bold text-[#FF6B6B]">M3: 거절을 기회로 바꾸는 대처법</h2>
+                    <span class="font-bold text-gray-400">Page 3 / 4</span>
                 </div>
                 <div class="flex-grow flex flex-col justify-center">
                     <h3 class="text-xl font-bold mb-4 text-center">✨ AI와 함께하는 거절 극복 훈련</h3>
@@ -118,8 +172,8 @@
 
             <div class="slide">
                 <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-bold text-[#FF6B6B]">M3: AI를 활용한 고객 관리</h2>
-                     <span class="font-bold text-gray-400">Page 3 / 3</span>
+                    <h2 class="text-2xl font-bold text-[#EF476F]">M4: AI를 활용한 고객 관리</h2>
+                     <span class="font-bold text-gray-400">Page 4 / 4</span>
                 </div>
                 <div class="flex-grow flex flex-col justify-center">
                     <h3 class="text-xl font-bold mb-4 text-center">✨ AI 후속 메시지 초안 작성 도우미</h3>
@@ -130,6 +184,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </main>
 
@@ -214,7 +269,7 @@
             });
 
             async function callGeminiAPI(prompt, retries = 3, delay = 1000) {
-                const apiKey = "AIzaSyB0GwdQwPzmHqOjLh42nyZg7-YNKs9Ama0"; 
+                const apiKey = ""; 
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
                 const payload = { contents: [{ parts: [{ text: prompt }] }] };
 
@@ -244,7 +299,7 @@
             async function generateContent(prompt, title) {
                 lastPrompt = prompt;
                 modalTitle.textContent = title;
-                modalText.innerHTML = ''; // textContent 대신 innerHTML을 사용하도록 변경
+                modalText.innerHTML = ''; 
                 modalLoader.style.display = 'flex';
                 copySuccessMessage.classList.add('hidden');
                 openModal();
@@ -252,7 +307,6 @@
                 const result = await callGeminiAPI(prompt);
                 
                 modalLoader.style.display = 'none';
-                // '**' 마크다운을 <strong> 태그로 변환
                 const formattedResult = result.trim().replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-gray-900">$1</strong>');
                 modalText.innerHTML = formattedResult;
             }
@@ -278,16 +332,47 @@
                 }
                 document.body.removeChild(textArea);
             });
+            
+            document.getElementById('persona-generator-btn')?.addEventListener('click', () => {
+                const personaName = document.getElementById('persona-name').value;
+                const personaAge = document.getElementById('persona-age').value;
+                const personaLocation = document.getElementById('persona-location').value;
+                const mainLivestock = document.getElementById('main-livestock').value;
+                const personaGoals = document.getElementById('persona-goals').value;
+                const personaChallenges = document.getElementById('persona-challenges').value;
+                const purchaseFactors = document.getElementById('purchase-factors').value;
+                const infoSources = document.getElementById('info-sources').value;
+
+                if (!personaName || !personaAge || !personaLocation || !mainLivestock || !personaGoals || !personaChallenges) {
+                    alert('모든 항목을 채워주세요.'); // 실제 앱에서는 모달로 대체하는 것이 좋습니다.
+                    return;
+                }
+
+                const prompt = `당신은 농축산 분야의 데이터 기반 영업 전략 전문가입니다. 다음 정보를 바탕으로 '팜스코' 사료를 구매할 가능성이 높은 잠재 고객 페르소나를 구체적으로 분석하고, 이 페르소나에게 효과적으로 접근할 수 있는 맞춤형 영업 전략을 3가지 제안해 주세요.
+
+### 입력된 페르소나 정보
+- **이름**: ${personaName}
+- **나이**: ${personaAge}
+- **주요 활동 지역**: ${personaLocation}
+- **주력 축종 및 규모**: ${mainLivestock}
+- **사업 목표**: ${personaGoals}
+- **주요 어려움**: ${personaChallenges}
+- **사료 선택 시 중요 요인**: ${purchaseFactors}
+- **주요 정보 채널**: ${infoSources}
+
+### 요청 사항
+1.  **페르소나 심층 분석**: 제공된 정보를 바탕으로 페르소나의 성격, 가치관, 업무 스타일, 숨겨진 니즈(unmet needs)를 추론하여 상세히 기술해주세요.
+2.  **맞춤형 영업 전략 제안**: 위 분석을 바탕으로, 신뢰를 형성하고 실질적인 가치를 제안할 수 있는 구체적인 영업 활동 3가지를 제안해주세요.
+3.  **답변 형식**: 분석과 전략 제안을 명확히 구분하고, 전문적인 용어를 사용하되 이해하기 쉽게 설명해주세요. 답변에 굵은 글씨를 표현할 때는 **텍스트** 형식을 사용해주세요.`;
+                
+                generateContent(prompt, `'${personaName}' 페르소나 분석 및 전략`);
+            });
 
             document.querySelectorAll('.script-generator-btn').forEach(button => {
                 button.addEventListener('click', () => {
                     const type = button.dataset.type;
                     const desc = button.dataset.desc;
-                    const prompt = `당신은 노련한 영업 컨설턴트입니다. '${type}' 유형의 고객을 처음 만났을 때 사용할 SPIN 셀링 대화 스크립트를 한국어로 작성해 주세요.
-
-고객의 주요 특징은 다음과 같습니다: "${desc}".
-
-스크립트는 Situation(상황), Problem(문제), Implication(시사), Need-payoff(해결) 질문 순서에 따라 자연스러운 대화 흐름으로 구성해 주세요. 각 단계별로 고객이 스스로 생각하고 답할 수 있는 질문을 1~2개씩 포함시켜 주세요. 답변에 굵은 글씨를 표현할 때는 **텍스트** 형식을 사용해주세요.`;
+                    const prompt = `당신은 노련한 영업 컨설턴트입니다. '${type}' 유형의 고객을 처음 만났을 때 사용할 SPIN 셀링 대화 스크립트를 한국어로 작성해 주세요.\n\n고객의 주요 특징은 다음과 같습니다: "${desc}".\n\n스크립트는 Situation(상황), Problem(문제), Implication(시사), Need-payoff(해결) 질문 순서에 따라 자연스러운 대화 흐름으로 구성해 주세요. 각 단계별로 고객이 스스로 생각하고 답할 수 있는 질문을 1~2개씩 포함시켜 주세요. 답변에 굵은 글씨를 표현할 때는 **텍스트** 형식을 사용해주세요.`;
                     generateContent(prompt, `'${type}' 고객 맞춤 SPIN 스크립트`);
                 });
             });
@@ -296,7 +381,6 @@
                 const objectionInput = document.getElementById('objection-input');
                 const objection = objectionInput.value.trim();
                 if (!objection) {
-                    // alert() 대신 모달창을 활용한 알림을 나중에 추가할 수 있습니다.
                     objectionInput.focus();
                     return;
                 }
@@ -308,7 +392,6 @@
                 const notesInput = document.getElementById('meeting-notes-input');
                 const notes = notesInput.value.trim();
                  if (!notes) {
-                    // alert() 대신 모달창을 활용한 알림을 나중에 추가할 수 있습니다.
                     notesInput.focus();
                     return;
                 }
@@ -320,3 +403,4 @@
     </script>
 </body>
 </html>
+
